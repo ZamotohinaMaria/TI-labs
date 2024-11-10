@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\",
+  "WorkspaceRootPath": "C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|c:\\users\\marishka\\desktop\\code\\teoria informatsii\\lab1_zamotohinamaria_6411\\lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|c:\\users\\marishka\\desktop\\code\\ti-labs\\lab1_zamotohinamaria_6411\\lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|solutionrelative:lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27615DC0-3389-42CF-BCD9-9273C6CD10DC}|Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411.csproj|solutionrelative:lab1_zamotohinamaria_6411\\lab1_zamotohina_6411.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -44,11 +44,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Lab1_Zamotohina_6411.cs",
-              "DocumentMoniker": "C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
+              "DocumentMoniker": "C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
               "RelativeDocumentMoniker": "Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
-              "ToolTip": "C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs*",
+              "ToolTip": "C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs*",
               "RelativeToolTip": "Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs*",
-              "ViewState": "AgIAAMAAAAAAAAAAAADwv8gAAACLAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAcwAkBAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T15:57:35.196Z",
               "EditorCaption": ""
@@ -57,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Lab1_Zamotohina_6411.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
+              "DocumentMoniker": "C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
               "RelativeDocumentMoniker": "Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs",
-              "ToolTip": "C:\\Users\\Marishka\\Desktop\\code\\Teoria Informatsii\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "ToolTip": "C:\\Users\\Marishka\\Desktop\\code\\TI-labs\\Lab1_ZamotohinaMaria_6411\\Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "RelativeToolTip": "Lab1_ZamotohinaMaria_6411\\Lab1_Zamotohina_6411.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T15:24:12.085Z",

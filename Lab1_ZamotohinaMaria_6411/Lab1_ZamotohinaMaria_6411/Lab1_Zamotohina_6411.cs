@@ -53,9 +53,9 @@ namespace Lab1_ZamotohinaMaria_6411
 
         private void btn_CodingHaffman(object sender, EventArgs e)
         {
-            string text = textBox_HaffmanFIO.Text;
+            string text = textBoxHaffmanFIO.Text;
             text = text.ToLower();
-            textBox_HaffmanFIO.Text = "";
+            textBoxHaffmanFIO.Text = "";
 
             var probabilities = CalculateSortProbabilities(text);
 
@@ -74,7 +74,9 @@ namespace Lab1_ZamotohinaMaria_6411
             var root = MakeHaffmanTree(probabilities);
             var codingText = CodingByHaffmanTree(root, text);
 
-            haffmanStatistic.Text = $"Объем строки: {text.Length} байт\r\nОбъем закодированной строки: {Convert.ToDouble(codingText.Length) / 8} байт\r\nСжатие: {Convert.ToDouble(codingText.Length) / (8 * Convert.ToDouble(text.Length)) * 100}%";
+            statisticHaffman.Text = $"Объем строки: {text.Length} байт\r\n" +
+                $"Объем закодированной строки: {Convert.ToDouble(codingText.Length) / 8} байт\r\n" +
+                $"Сжатие: {100 - Convert.ToDouble(codingText.Length) / (8 * Convert.ToDouble(text.Length)) * 100}%";
 
         }
 
@@ -172,9 +174,9 @@ namespace Lab1_ZamotohinaMaria_6411
        
         private void btn_CodingShennonFanno(object sender, EventArgs e)
         {
-            string text = textBox_ShennonFIO.Text;
+            string text = textBoxShennonFIO.Text;
             text = text.ToLower();
-            textBox_ShennonFIO.Text = "";
+            textBoxShennonFIO.Text = "";
 
             var probabilities = CalculateSortProbabilities(text);
 
@@ -197,8 +199,10 @@ namespace Lab1_ZamotohinaMaria_6411
                 codingText += code[symbol];
             }
 
-            textBox_ShennonCode.Text = codingText;
-            shennonStatistic.Text = $"Объем строки: {text.Length} байт\r\nОбъем закодированной строки: {Convert.ToDouble(codingText.Length) / 8} байт\r\nСжатие: {Convert.ToDouble(codingText.Length) / (8 * Convert.ToDouble(text.Length)) * 100}%";
+            textBoxShennonCode.Text = codingText;
+            statisticShennon.Text = $"Объем строки: {text.Length} байт\r\n" +
+                $"Объем закодированной строки: {Convert.ToDouble(codingText.Length) / 8} байт\r\n" +
+                $"Сжатие: {100 - Convert.ToDouble(codingText.Length) / (8 * Convert.ToDouble(text.Length)) * 100}%";
         }
 
         private void ShennonFanno(List<char> symbols, Dictionary<char, double> probabilities, Dictionary<char, string> codes, string postfix)
@@ -227,6 +231,45 @@ namespace Lab1_ZamotohinaMaria_6411
             ShennonFanno(symbols.Skip(splitIndex + 1).ToList(), probabilities, codes, postfix + "1");
         }
 
+        private void btn_CodeArithmetic(object sender, EventArgs e)
+        {
+            string text = textBoxArithmeticFIO.Text;
+            text = text.ToLower();
+            textBoxHaffmanFIO.Text = "";
+
+            var probabilities = CalculateSortProbabilities(text);
+
+            var intervals = new Dictionary<char, List<double>>();
+
+            double start = 0;
+
+            foreach (var key in probabilities.Keys)
+            {
+                intervals.Add(key, new List<double>() { start, start + probabilities[key] });
+                start += probabilities[key];
+            }
+
+            double min = 0;
+            double max = 1;
+
+            foreach (var key in text)
+            {
+                var delta = max - min;
+                max = min + delta*intervals[key][1];
+                min = min + delta*intervals[key][0];
+            }
+
+            var codingText = ((max + min) / 2.0).ToString();
+
+            codingText = codingText.Split(',')[1];
+            var binaryCode = Convert.ToString(long.Parse(codingText), 2);
+            textBoxArithmeticCode.Text = $"{codingText}\r\n{binaryCode}";
+
+            statisticArithmetic.Text = $"Объем строки: {text.Length} байт\r\n" +
+                $"Объем закодированной строки: {codingText.Length} байт\r\n" +
+                $"Сжатие: {100 - Convert.ToDouble(codingText.Length) / (Convert.ToDouble(text.Length)) * 100}%";
+
+        }
         
         private void btn_DecodingShennonFanno(object sender, EventArgs e)
         {
@@ -234,6 +277,12 @@ namespace Lab1_ZamotohinaMaria_6411
         }
 
         private void btn_DecodingHaffman(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void btn_DecodeArithmetic(object sender, EventArgs e)
         {
 
         }

@@ -28,48 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label label1;
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.shennonStatistic = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.statisticShennon = new System.Windows.Forms.Label();
+            this.buttonDecodeShennon = new System.Windows.Forms.Button();
+            this.buttonCodeShennon = new System.Windows.Forms.Button();
             this.probabilitiesShennon = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox_ShennonCode = new System.Windows.Forms.TextBox();
-            this.textBox_ShennonFIO = new System.Windows.Forms.TextBox();
+            this.textBoxShennonCode = new System.Windows.Forms.TextBox();
+            this.textBoxShennonFIO = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.haffmanStatistic = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.statisticHaffman = new System.Windows.Forms.Label();
+            this.buttonDecodeHaffman = new System.Windows.Forms.Button();
+            this.buttonCodeHaffman = new System.Windows.Forms.Button();
             this.probabilitiesHaffman = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox_HaffmanCode = new System.Windows.Forms.TextBox();
+            this.textBoxHaffmanCode = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox_HaffmanFIO = new System.Windows.Forms.TextBox();
+            this.textBoxHaffmanFIO = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            label1 = new System.Windows.Forms.Label();
+            this.statisticArithmetic = new System.Windows.Forms.Label();
+            this.buttonDecodeArithmetic = new System.Windows.Forms.Button();
+            this.buttonCodeArithmetic = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxArithmeticCode = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxArithmeticFIO = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = System.Drawing.Color.Firebrick;
-            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label1.Enabled = false;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            label1.Location = new System.Drawing.Point(528, 28);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(82, 34);
-            label1.TabIndex = 5;
-            label1.Text = "ФИО";
-            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Firebrick;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(549, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 34);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "ФИО";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControl1
             // 
@@ -86,15 +92,15 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
-            this.tabPage1.Controls.Add(this.shennonStatistic);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.statisticShennon);
+            this.tabPage1.Controls.Add(this.buttonDecodeShennon);
+            this.tabPage1.Controls.Add(this.buttonCodeShennon);
             this.tabPage1.Controls.Add(this.probabilitiesShennon);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox_ShennonCode);
-            this.tabPage1.Controls.Add(label1);
-            this.tabPage1.Controls.Add(this.textBox_ShennonFIO);
+            this.tabPage1.Controls.Add(this.textBoxShennonCode);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.textBoxShennonFIO);
             this.tabPage1.Location = new System.Drawing.Point(4, 35);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -103,48 +109,48 @@
             this.tabPage1.Text = "Кодирование Шеннона-Фанно";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // shennonStatistic
+            // statisticShennon
             // 
-            this.shennonStatistic.AutoSize = true;
-            this.shennonStatistic.Location = new System.Drawing.Point(446, 584);
-            this.shennonStatistic.Name = "shennonStatistic";
-            this.shennonStatistic.Size = new System.Drawing.Size(411, 78);
-            this.shennonStatistic.TabIndex = 13;
-            this.shennonStatistic.Text = "Объем строки: X байт\r\nОбъем закодированной строки: X байт\r\nСжатие: X%";
+            this.statisticShennon.AutoSize = true;
+            this.statisticShennon.Location = new System.Drawing.Point(467, 589);
+            this.statisticShennon.Name = "statisticShennon";
+            this.statisticShennon.Size = new System.Drawing.Size(411, 78);
+            this.statisticShennon.TabIndex = 13;
+            this.statisticShennon.Text = "Объем строки: X байт\r\nОбъем закодированной строки: X байт\r\nСжатие: X%";
             // 
-            // button2
+            // buttonDecodeShennon
             // 
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.Brown;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(831, 375);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(229, 56);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Декодировать";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btn_DecodingShennonFanno);
+            this.buttonDecodeShennon.AutoSize = true;
+            this.buttonDecodeShennon.BackColor = System.Drawing.Color.Brown;
+            this.buttonDecodeShennon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDecodeShennon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonDecodeShennon.Location = new System.Drawing.Point(852, 380);
+            this.buttonDecodeShennon.Name = "buttonDecodeShennon";
+            this.buttonDecodeShennon.Size = new System.Drawing.Size(229, 56);
+            this.buttonDecodeShennon.TabIndex = 12;
+            this.buttonDecodeShennon.Text = "Декодировать";
+            this.buttonDecodeShennon.UseVisualStyleBackColor = false;
+            this.buttonDecodeShennon.Click += new System.EventHandler(this.btn_DecodingShennonFanno);
             // 
-            // button1
+            // buttonCodeShennon
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Brown;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(831, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 56);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Закодировать";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btn_CodingShennonFanno);
+            this.buttonCodeShennon.AutoSize = true;
+            this.buttonCodeShennon.BackColor = System.Drawing.Color.Brown;
+            this.buttonCodeShennon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCodeShennon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCodeShennon.Location = new System.Drawing.Point(852, 287);
+            this.buttonCodeShennon.Name = "buttonCodeShennon";
+            this.buttonCodeShennon.Size = new System.Drawing.Size(229, 56);
+            this.buttonCodeShennon.TabIndex = 11;
+            this.buttonCodeShennon.Text = "Закодировать";
+            this.buttonCodeShennon.UseVisualStyleBackColor = false;
+            this.buttonCodeShennon.Click += new System.EventHandler(this.btn_CodingShennonFanno);
             // 
             // probabilitiesShennon
             // 
             this.probabilitiesShennon.AcceptsTab = true;
             this.probabilitiesShennon.BackColor = System.Drawing.Color.Linen;
-            this.probabilitiesShennon.Location = new System.Drawing.Point(55, 337);
+            this.probabilitiesShennon.Location = new System.Drawing.Point(76, 342);
             this.probabilitiesShennon.Name = "probabilitiesShennon";
             this.probabilitiesShennon.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.probabilitiesShennon.Size = new System.Drawing.Size(323, 325);
@@ -155,10 +161,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Brown;
-            this.label3.Enabled = false;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(58, 282);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(79, 287);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(320, 32);
@@ -170,49 +175,48 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Firebrick;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(528, 119);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(549, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 34);
             this.label2.TabIndex = 7;
             this.label2.Text = "Код";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox_ShennonCode
+            // textBoxShennonCode
             // 
-            this.textBox_ShennonCode.BackColor = System.Drawing.Color.Linen;
-            this.textBox_ShennonCode.Location = new System.Drawing.Point(37, 165);
-            this.textBox_ShennonCode.Multiline = true;
-            this.textBox_ShennonCode.Name = "textBox_ShennonCode";
-            this.textBox_ShennonCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_ShennonCode.Size = new System.Drawing.Size(1048, 89);
-            this.textBox_ShennonCode.TabIndex = 6;
-            this.textBox_ShennonCode.Text = "-";
-            this.textBox_ShennonCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxShennonCode.BackColor = System.Drawing.Color.Linen;
+            this.textBoxShennonCode.Location = new System.Drawing.Point(58, 170);
+            this.textBoxShennonCode.Multiline = true;
+            this.textBoxShennonCode.Name = "textBoxShennonCode";
+            this.textBoxShennonCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxShennonCode.Size = new System.Drawing.Size(1048, 89);
+            this.textBoxShennonCode.TabIndex = 6;
+            this.textBoxShennonCode.Text = "-";
+            this.textBoxShennonCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox_ShennonFIO
+            // textBoxShennonFIO
             // 
-            this.textBox_ShennonFIO.BackColor = System.Drawing.Color.Linen;
-            this.textBox_ShennonFIO.Location = new System.Drawing.Point(266, 71);
-            this.textBox_ShennonFIO.Name = "textBox_ShennonFIO";
-            this.textBox_ShennonFIO.Size = new System.Drawing.Size(577, 32);
-            this.textBox_ShennonFIO.TabIndex = 4;
-            this.textBox_ShennonFIO.Text = "Замотохина Мария Андреевна";
-            this.textBox_ShennonFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxShennonFIO.BackColor = System.Drawing.Color.Linen;
+            this.textBoxShennonFIO.Location = new System.Drawing.Point(287, 76);
+            this.textBoxShennonFIO.Name = "textBoxShennonFIO";
+            this.textBoxShennonFIO.Size = new System.Drawing.Size(577, 32);
+            this.textBoxShennonFIO.TabIndex = 4;
+            this.textBoxShennonFIO.Text = "Замотохина Мария Андреевна";
+            this.textBoxShennonFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.haffmanStatistic);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.statisticHaffman);
+            this.tabPage2.Controls.Add(this.buttonDecodeHaffman);
+            this.tabPage2.Controls.Add(this.buttonCodeHaffman);
             this.tabPage2.Controls.Add(this.probabilitiesHaffman);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox_HaffmanCode);
+            this.tabPage2.Controls.Add(this.textBoxHaffmanCode);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox_HaffmanFIO);
+            this.tabPage2.Controls.Add(this.textBoxHaffmanFIO);
             this.tabPage2.Location = new System.Drawing.Point(4, 35);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -221,42 +225,42 @@
             this.tabPage2.Text = "Кодирование по Хаффману";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // haffmanStatistic
+            // statisticHaffman
             // 
-            this.haffmanStatistic.AutoSize = true;
-            this.haffmanStatistic.Location = new System.Drawing.Point(467, 591);
-            this.haffmanStatistic.Name = "haffmanStatistic";
-            this.haffmanStatistic.Size = new System.Drawing.Size(411, 78);
-            this.haffmanStatistic.TabIndex = 22;
-            this.haffmanStatistic.Text = "Объем строки: Х байт\r\nОбъем закодированной строки: Х байт\r\nСжатие: X%";
+            this.statisticHaffman.AutoSize = true;
+            this.statisticHaffman.Location = new System.Drawing.Point(467, 591);
+            this.statisticHaffman.Name = "statisticHaffman";
+            this.statisticHaffman.Size = new System.Drawing.Size(411, 78);
+            this.statisticHaffman.TabIndex = 22;
+            this.statisticHaffman.Text = "Объем строки: Х байт\r\nОбъем закодированной строки: Х байт\r\nСжатие: X%";
             // 
-            // button3
+            // buttonDecodeHaffman
             // 
-            this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.Color.DarkGreen;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(852, 382);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(229, 56);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Декодировать";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btn_DecodingHaffman);
+            this.buttonDecodeHaffman.AutoSize = true;
+            this.buttonDecodeHaffman.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonDecodeHaffman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDecodeHaffman.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonDecodeHaffman.Location = new System.Drawing.Point(852, 382);
+            this.buttonDecodeHaffman.Name = "buttonDecodeHaffman";
+            this.buttonDecodeHaffman.Size = new System.Drawing.Size(229, 56);
+            this.buttonDecodeHaffman.TabIndex = 21;
+            this.buttonDecodeHaffman.Text = "Декодировать";
+            this.buttonDecodeHaffman.UseVisualStyleBackColor = false;
+            this.buttonDecodeHaffman.Click += new System.EventHandler(this.btn_DecodingHaffman);
             // 
-            // button4
+            // buttonCodeHaffman
             // 
-            this.button4.AutoSize = true;
-            this.button4.BackColor = System.Drawing.Color.DarkGreen;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(852, 289);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(229, 56);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Закодировать";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.btn_CodingHaffman);
+            this.buttonCodeHaffman.AutoSize = true;
+            this.buttonCodeHaffman.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonCodeHaffman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCodeHaffman.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCodeHaffman.Location = new System.Drawing.Point(852, 289);
+            this.buttonCodeHaffman.Name = "buttonCodeHaffman";
+            this.buttonCodeHaffman.Size = new System.Drawing.Size(229, 56);
+            this.buttonCodeHaffman.TabIndex = 20;
+            this.buttonCodeHaffman.Text = "Закодировать";
+            this.buttonCodeHaffman.UseVisualStyleBackColor = false;
+            this.buttonCodeHaffman.Click += new System.EventHandler(this.btn_CodingHaffman);
             // 
             // probabilitiesHaffman
             // 
@@ -296,17 +300,17 @@
             this.label7.Text = "Код";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox_HaffmanCode
+            // textBoxHaffmanCode
             // 
-            this.textBox_HaffmanCode.BackColor = System.Drawing.Color.Linen;
-            this.textBox_HaffmanCode.Location = new System.Drawing.Point(60, 165);
-            this.textBox_HaffmanCode.Multiline = true;
-            this.textBox_HaffmanCode.Name = "textBox_HaffmanCode";
-            this.textBox_HaffmanCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_HaffmanCode.Size = new System.Drawing.Size(1048, 82);
-            this.textBox_HaffmanCode.TabIndex = 16;
-            this.textBox_HaffmanCode.Text = "-";
-            this.textBox_HaffmanCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxHaffmanCode.BackColor = System.Drawing.Color.Linen;
+            this.textBoxHaffmanCode.Location = new System.Drawing.Point(60, 165);
+            this.textBoxHaffmanCode.Multiline = true;
+            this.textBoxHaffmanCode.Name = "textBoxHaffmanCode";
+            this.textBoxHaffmanCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxHaffmanCode.Size = new System.Drawing.Size(1048, 82);
+            this.textBoxHaffmanCode.TabIndex = 16;
+            this.textBoxHaffmanCode.Text = "-";
+            this.textBoxHaffmanCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -322,18 +326,25 @@
             this.label8.Text = "ФИО";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox_HaffmanFIO
+            // textBoxHaffmanFIO
             // 
-            this.textBox_HaffmanFIO.BackColor = System.Drawing.Color.Linen;
-            this.textBox_HaffmanFIO.Location = new System.Drawing.Point(287, 78);
-            this.textBox_HaffmanFIO.Name = "textBox_HaffmanFIO";
-            this.textBox_HaffmanFIO.Size = new System.Drawing.Size(577, 32);
-            this.textBox_HaffmanFIO.TabIndex = 14;
-            this.textBox_HaffmanFIO.Text = "Замотохина Мария Андреевна";
-            this.textBox_HaffmanFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxHaffmanFIO.BackColor = System.Drawing.Color.Linen;
+            this.textBoxHaffmanFIO.Location = new System.Drawing.Point(287, 78);
+            this.textBoxHaffmanFIO.Name = "textBoxHaffmanFIO";
+            this.textBoxHaffmanFIO.Size = new System.Drawing.Size(577, 32);
+            this.textBoxHaffmanFIO.TabIndex = 14;
+            this.textBoxHaffmanFIO.Text = "Замотохина Мария Андреевна";
+            this.textBoxHaffmanFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.statisticArithmetic);
+            this.tabPage3.Controls.Add(this.buttonDecodeArithmetic);
+            this.tabPage3.Controls.Add(this.buttonCodeArithmetic);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.textBoxArithmeticCode);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.textBoxArithmeticFIO);
             this.tabPage3.Location = new System.Drawing.Point(4, 35);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -341,6 +352,93 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Арифметическое кодирование";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // statisticArithmetic
+            // 
+            this.statisticArithmetic.AutoSize = true;
+            this.statisticArithmetic.Location = new System.Drawing.Point(52, 454);
+            this.statisticArithmetic.Name = "statisticArithmetic";
+            this.statisticArithmetic.Size = new System.Drawing.Size(411, 78);
+            this.statisticArithmetic.TabIndex = 22;
+            this.statisticArithmetic.Text = "Объем строки: X байт\r\nОбъем закодированной строки: X байт\r\nСжатие: X%";
+            // 
+            // buttonDecodeArithmetic
+            // 
+            this.buttonDecodeArithmetic.AutoSize = true;
+            this.buttonDecodeArithmetic.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDecodeArithmetic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDecodeArithmetic.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonDecodeArithmetic.Location = new System.Drawing.Point(851, 379);
+            this.buttonDecodeArithmetic.Name = "buttonDecodeArithmetic";
+            this.buttonDecodeArithmetic.Size = new System.Drawing.Size(229, 56);
+            this.buttonDecodeArithmetic.TabIndex = 21;
+            this.buttonDecodeArithmetic.Text = "Декодировать";
+            this.buttonDecodeArithmetic.UseVisualStyleBackColor = false;
+            this.buttonDecodeArithmetic.Click += new System.EventHandler(this.btn_DecodeArithmetic);
+            // 
+            // buttonCodeArithmetic
+            // 
+            this.buttonCodeArithmetic.AutoSize = true;
+            this.buttonCodeArithmetic.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonCodeArithmetic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCodeArithmetic.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonCodeArithmetic.Location = new System.Drawing.Point(851, 286);
+            this.buttonCodeArithmetic.Name = "buttonCodeArithmetic";
+            this.buttonCodeArithmetic.Size = new System.Drawing.Size(229, 56);
+            this.buttonCodeArithmetic.TabIndex = 20;
+            this.buttonCodeArithmetic.Text = "Закодировать";
+            this.buttonCodeArithmetic.UseVisualStyleBackColor = false;
+            this.buttonCodeArithmetic.Click += new System.EventHandler(this.btn_CodeArithmetic);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(548, 123);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 34);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Код";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxArithmeticCode
+            // 
+            this.textBoxArithmeticCode.BackColor = System.Drawing.Color.Linen;
+            this.textBoxArithmeticCode.Location = new System.Drawing.Point(57, 169);
+            this.textBoxArithmeticCode.Multiline = true;
+            this.textBoxArithmeticCode.Name = "textBoxArithmeticCode";
+            this.textBoxArithmeticCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxArithmeticCode.Size = new System.Drawing.Size(1048, 89);
+            this.textBoxArithmeticCode.TabIndex = 16;
+            this.textBoxArithmeticCode.Text = "-";
+            this.textBoxArithmeticCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(548, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 34);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "ФИО";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxArithmeticFIO
+            // 
+            this.textBoxArithmeticFIO.BackColor = System.Drawing.Color.Linen;
+            this.textBoxArithmeticFIO.Location = new System.Drawing.Point(286, 75);
+            this.textBoxArithmeticFIO.Name = "textBoxArithmeticFIO";
+            this.textBoxArithmeticFIO.Size = new System.Drawing.Size(577, 32);
+            this.textBoxArithmeticFIO.TabIndex = 14;
+            this.textBoxArithmeticFIO.Text = "Замотохина Мария Андреевна";
+            this.textBoxArithmeticFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -355,6 +453,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -367,21 +467,29 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox_ShennonCode;
-        private System.Windows.Forms.TextBox textBox_ShennonFIO;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label shennonStatistic;
-        private System.Windows.Forms.Label haffmanStatistic;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxShennonCode;
+        private System.Windows.Forms.TextBox textBoxShennonFIO;
+        private System.Windows.Forms.Button buttonCodeShennon;
+        private System.Windows.Forms.Button buttonDecodeShennon;
+        private System.Windows.Forms.Label statisticShennon;
+        private System.Windows.Forms.Label statisticHaffman;
+        private System.Windows.Forms.Button buttonDecodeHaffman;
+        private System.Windows.Forms.Button buttonCodeHaffman;
         private System.Windows.Forms.RichTextBox probabilitiesHaffman;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox_HaffmanCode;
+        private System.Windows.Forms.TextBox textBoxHaffmanCode;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox_HaffmanFIO;
+        private System.Windows.Forms.TextBox textBoxHaffmanFIO;
         private System.Windows.Forms.RichTextBox probabilitiesShennon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label statisticArithmetic;
+        private System.Windows.Forms.Button buttonDecodeArithmetic;
+        private System.Windows.Forms.Button buttonCodeArithmetic;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxArithmeticCode;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxArithmeticFIO;
     }
 }
 

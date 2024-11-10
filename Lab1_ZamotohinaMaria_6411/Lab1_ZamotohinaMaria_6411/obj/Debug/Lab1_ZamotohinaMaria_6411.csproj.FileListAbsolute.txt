@@ -8,3 +8,13 @@ C:\Users\Marishka\Desktop\code\Teoria Informatsii\Lab1_ZamotohinaMaria_6411\Lab1
 C:\Users\Marishka\Desktop\code\Teoria Informatsii\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.csproj.CoreCompileInputs.cache
 C:\Users\Marishka\Desktop\code\Teoria Informatsii\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.exe
 C:\Users\Marishka\Desktop\code\Teoria Informatsii\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.pdb
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\bin\Debug\Lab1_ZamotohinaMaria_6411.exe.config
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\bin\Debug\Lab1_ZamotohinaMaria_6411.exe
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\bin\Debug\Lab1_ZamotohinaMaria_6411.pdb
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.csproj.AssemblyReference.cache
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.Form1.resources
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.Properties.Resources.resources
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.csproj.GenerateResource.cache
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.csproj.CoreCompileInputs.cache
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.exe
+C:\Users\Marishka\Desktop\code\TI-labs\Lab1_ZamotohinaMaria_6411\Lab1_ZamotohinaMaria_6411\obj\Debug\Lab1_ZamotohinaMaria_6411.pdb
